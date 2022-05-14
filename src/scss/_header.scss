@@ -1,0 +1,33 @@
+.headerToolbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.headerToolbar__heading {
+  margin: 0.5rem 0;
+  flex-grow: 1;
+}
+.AppBar {
+  position: relative;
+  .headerToolbar__heading {
+    padding: 0 0 0 0.5rem;
+  }
+  .headerToolbar {
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+  }
+  .openNav {
+    .ic {
+      width: 3rem;
+      border-radius: 0 4rem 4rem 0px;
+      display: flex;
+      margin-right: 1rem;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}

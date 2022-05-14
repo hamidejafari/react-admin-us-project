@@ -1,0 +1,125 @@
+.modal-dialog {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  z-index: 2000;
+  margin: 1.5rem 0.5rem;
+  transform: translate(0, -50px);
+  max-width: 880px;
+}
+
+.modal-dialog.width-normal {
+  min-width: 400px;
+}
+
+.modal-dialog.width-large {
+  min-width: 800px;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal-wrapper-enter {
+  display: block;
+  opacity: 0;
+  transform: translate(0, -50px);
+}
+
+.modal-wrapper-enter-active {
+  opacity: 1;
+  transition: opacity 300ms, transform 300ms;
+  display: block;
+  transform: none;
+}
+
+.modal-wrapper-enter-done {
+  display: block;
+  transform: none;
+}
+
+.modal-wrapper-exit {
+  display: block;
+  opacity: 1;
+  transform: none;
+}
+
+.modal-wrapper-exit-active {
+  display: block;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  transform: translate(0, -50px);
+}
+
+.modal-wrapper-exit-done {
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  border-top: 1px solid #dee2e6;
+  border-bottom-right-radius: calc(0.3rem - 1px);
+  border-bottom-left-radius: calc(0.3rem - 1px);
+}
+
+.modal-footer>* {
+  margin: 0.25rem;
+}
+
+@media (max-width: 900px) {
+  .modal-dialog {
+    max-width: 580px;
+  }
+
+  .modal-dialog.width-large {
+    min-width: 580px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-dialog {
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0.5rem;
+  }
+
+  .modal-dialog.width-large {
+    min-width: unset;
+  }
+}

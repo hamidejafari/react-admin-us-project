@@ -1,0 +1,68 @@
+// content
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+}
+.icn_sidebar {
+  margin-right: 5px;
+}
+
+.MuiButtonBase-root.sidebar-button-active,
+.sidebar-button-active {
+  background-color: #1b1b28;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.menu-bullet {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.menu-bullet .bullet {
+  background-color: #9899ac;
+}
+
+.side_item .side_link:hover .menu-bullet .bullet,
+.side_link.sidebar-button-active .menu-bullet .bullet {
+  background-color: #009ef7;
+}
+.bullet-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 100% !important;
+}
+
+.closeIcon svg path {
+  transition: fill 0.3s ease;
+}
+
+.closeIcon:hover svg path {
+  fill: #009ef7;
+}
+
+.openIcon {
+  position: relative;
+  top: -6px;
+}
+
+.openIcon svg path {
+  transition: fill 0.3s ease;
+}
+
+.openIcon:hover svg path {
+  fill: #009ef7;
+}
+.arrow-down-sidebar{
+  position: absolute;
+  right: 15px;
+}
+
+// desktop
